@@ -512,6 +512,24 @@ footer {
   .hero-cta { flex-direction: column; }
   .btn { text-align: center; justify-content: center; }
 
+  .hero-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.55rem;
+    margin-bottom: -0.25rem; /* tighten gap before .hero-title */
+  }
+  .credential-tag {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    background: rgba(110,231,199,0.08);
+    border: 1px solid rgba(110,231,199,0.25);
+    padding: 0.2rem 0.55rem;
+    border-radius: 3px;
+  }
+
   /* Sections */
   section { padding: 2.75rem 1.25rem; }
   .section-header { flex-direction: column; align-items: flex-start; gap: 0.35rem; margin-bottom: 1.75rem; }
@@ -558,7 +576,11 @@ footer {
 <!-- HERO -->
 <div id="top" class="hero">
   <div class="hero-left">
-    <h1 class="hero-name">Chathuddasie<br><em>(Chat)</em><br>Amarasinghe, PhD, CIMA Adv Dip MA</h1>
+    <h1 class="hero-name">Chathuddasie<br><em>(Chat)</em><br>Amarasinghe</h1>
+    <div class="hero-credentials">
+      <span class="credential-tag">PhD</span>
+      <span class="credential-tag">CIMA Adv Dip MA</span>
+    </div>
     <p class="hero-title">Cell Biology · Live-cell Imaging · Microfabrication</p>
     <p class="hero-bio">7+ years of experience in life sciences research, advanced imaging, and specialized instrumentation. Investigating chromosome organization and intracellular dynamics in <em>E. coli</em> using fluorescence microscopy, genetic engineering, and computational modeling.</p>
     <div class="hero-cta">
