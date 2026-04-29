@@ -485,16 +485,15 @@ footer {
    MOBILE  (max-width: 768px)
 ═══════════════════════════════════════ */
 @media (max-width: 768px) {
-  /* Nav: hide logo, all tabs visible & horizontally scrollable from left */
   .nav-logo { display: none; }
   .nav-links { justify-content: flex-start; }
   .nav-links a { padding: 0 0.85rem; font-size: 0.7rem; }
 
-  /* Hero: single column, portrait on top */
+  
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-right { order: -1; padding: 0; gap: 0; }
 
-  /* ✅ FIX: show full portrait without cropping */
+  
   .hero-portrait {
     max-height: none;
     aspect-ratio: unset;
@@ -517,7 +516,7 @@ footer {
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-top: 0.55rem;
-    margin-bottom: -0.25rem; /* tighten gap before .hero-title */
+    margin-bottom: -0.25rem; 
   }
   .credential-tag {
     font-family: var(--mono);
@@ -530,37 +529,36 @@ footer {
     border-radius: 3px;
   }
 
-  /* Sections */
+  
   section { padding: 2.75rem 1.25rem; }
   .section-header { flex-direction: column; align-items: flex-start; gap: 0.35rem; margin-bottom: 1.75rem; }
   .section-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
 
-  /* Publications */
+  
   .pub-card { grid-template-columns: 1fr; gap: 0.5rem; padding: 1.25rem; }
   .pub-index { display: none; }
 
-  /* Timeline */
+ 
   .timeline { padding-left: 1.5rem; }
   .timeline-entry::before { left: -1.85rem; }
   .timeline-role { font-size: 1.1rem; }
 
-  /* Skills & Awards: single column */
+
   .skills-grid { grid-template-columns: 1fr; }
   .awards-grid { grid-template-columns: 1fr; }
 
-  /* Contact */
+  
   .contact-heading { font-size: clamp(1.9rem, 8vw, 2.5rem); }
   .contact-links { flex-direction: column; align-items: stretch; gap: 0.65rem; }
   .contact-link { justify-content: center; }
 
-  /* Footer */
+  
   footer { flex-direction: column; gap: 0.4rem; text-align: center; padding: 1.5rem 1.25rem; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#top" class="nav-logo">CA</a>
   <ul class="nav-links">
@@ -573,12 +571,11 @@ footer {
   </ul>
 </nav>
 
-<!-- HERO -->
+
 <div id="top" class="hero">
   <div class="hero-left">
     <h1 class="hero-name">Chathuddasie<br><em>(Chat)</em><br>Amarasinghe</h1>
     <p class="hero-title">PhD, CIMA Adv Dip MA</p>
-    <p class="hero-title">Cell Biology · Live-cell Imaging · Microfabrication</p>
     <p class="hero-bio">7+ years of experience in life sciences research, advanced imaging, and specialized instrumentation. Investigating chromosome organization and intracellular dynamics in <em>E. coli</em> using fluorescence microscopy, genetic engineering, and computational modeling.</p>
     <div class="hero-cta">
       <a href="#publications" class="btn btn-primary">View Research ↗</a>
