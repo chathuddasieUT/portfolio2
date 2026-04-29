@@ -493,7 +493,16 @@ footer {
   /* Hero: single column, portrait on top */
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-right { order: -1; padding: 0; gap: 0; }
-  .hero-portrait { max-height: 55vw; aspect-ratio: unset; width: 100%; object-position: center top; }
+
+  /* ✅ FIX: show full portrait without cropping */
+  .hero-portrait {
+    max-height: none;
+    aspect-ratio: unset;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
   .stat-grid { grid-template-columns: 1fr 1fr; }
   .stat-number { font-size: 1.9rem; }
   .stat-cell { padding: 1.1rem 1rem; }
