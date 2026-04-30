@@ -189,12 +189,19 @@ nav {
   gap: 1rem;
 }
 
-.hero-portrait {
+/* .hero-portrait {
   width: 100%; aspect-ratio: 4/3;
   object-fit: cover;
   display: block;
   filter: grayscale(20%) contrast(1.05);
   border: 1px solid var(--border);
+} */
+.hero-portrait {
+  width: 100%;
+  max-height: 320px;
+  aspect-ratio: unset;
+  object-fit: cover;
+  object-position: top;
 }
 
 .stat-grid {
