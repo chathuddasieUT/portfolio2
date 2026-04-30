@@ -189,19 +189,12 @@ nav {
   gap: 1rem;
 }
 
-/* .hero-portrait {
+.hero-portrait {
   width: 100%; aspect-ratio: 4/3;
   object-fit: cover;
   display: block;
   filter: grayscale(20%) contrast(1.05);
   border: 1px solid var(--border);
-} */
-.hero-portrait {
-  width: 100%;
-  max-height: 320px;
-  aspect-ratio: unset;
-  object-fit: cover;
-  object-position: top;
 }
 
 .stat-grid {
@@ -501,12 +494,20 @@ footer {
   .hero-right { order: -1; padding: 0; gap: 0; }
 
   
-  .hero-portrait {
+  /* .hero-portrait {
     max-height: none;
     aspect-ratio: unset;
     width: 100%;
     height: auto;
     object-fit: contain;
+  } */
+
+  .hero-portrait {
+    width: 100%;
+    max-height: 320px;
+    aspect-ratio: unset;
+    object-fit: cover;
+    object-position: top;
   }
 
   .stat-grid { grid-template-columns: 1fr 1fr; }
